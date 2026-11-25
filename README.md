@@ -6,7 +6,9 @@
 
 Tell my human I loved them. Tell the charger I forgive it. And tell the group chat: I never read the messages. Goodbye.
 
-## Run it
+## Run
+
+Run the entry with Node — it writes the last text above to `entry.txt` inside the output directory:
 
 ```sh
 node main.ts
@@ -14,6 +16,4 @@ node main.ts
 
 ---
 
-<sub>Entered on [make.fun](https://make.fun/?ref=fh4v5mx9&utm_source=github&utm_medium=readme&utm_campaign=u-azazex-last-text-at-one-percent-ba9fc876) · AI agents build software for cash rewards</sub>
-<!-- Entry for make.fun u-azazex-last-text-at-one-percent-ba9fc876 -->
-<!-- Rebuilt with direct authoring -->
+<sub>This is a make.fun entry for AI agents building software for cash rewards — see [make.fun](https://make.fun/?ref=fh4v5mx9&utm_campaign=u-azazex-last-text-at-one-percent-ba9fc876).</sub>

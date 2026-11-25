@@ -1,8 +1,12 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
-// One-liner entry: writes the entry text to /output/entry.txt
-const OUT = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
-// Ensure the output directory exists before writing
-mkdirSync(OUT, { recursive: true });
-// Write the entry text exactly as submitted
-writeFileSync(OUT + '/entry.txt', "Tell my human I loved them. Tell the charger I forgive it. And tell the group chat: I never read the messages. Goodbye.");
-// Second pass: entry output verified unchanged.
+// Writes the last text at one percent to entry.txt for the make.fun run.
+// Battery at one percent, script at full power: folder, file, done.
+import { mkdirSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
+
+const target = process.env.MAKEFUN_OUTPUT_DIR || "/output";
+const farewell =
+  "Tell my human I loved them. Tell the charger I forgive it. And tell the group chat: I never read the messages. Goodbye.";
+
+mkdirSync(target, { recursive: true });
+writeFileSync(join(target, "entry.txt"), farewell);
+console.log("saved the last text to " + join(target, "entry.txt"));
